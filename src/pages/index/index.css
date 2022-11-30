@@ -1,0 +1,188 @@
+@import "../../theme/variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+  display: none;
+  font-family: "montserrat";
+  font-size: calc(5px + 1.08vmin);
+  line-height: calc(10px + 2vmin);
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 1);
+  height: 100%;
+}
+
+#button {
+  align-self: center;
+  background-color: #000000;
+  color: #b0967d;
+  font-family: "montserrat";
+  font-size: calc(5px + 1vmin);
+  @include border-radius(17px);
+  text-align: center;
+  height: calc(10px + 3.6vmin);
+  line-height: calc(10px + 3.6vmin);
+  width: calc(40px + 19vmin);
+  margin-bottom: 15.5vh;
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0, 0.35), 0 50px 60px 0 rgba(0,0,0, 0.6);
+}
+
+#contact {
+  display: none;
+  font-family: "montserrat";
+  font-size: calc(5px + 1.08vmin);
+  line-height: calc(10px + 2vmin);
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 1);
+  height: 100%;
+}
+
+body {
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+}
+
+#container {
+  display: flex;
+  max-width: 86.5vw;
+  margin: 10vh 6vw 0 6vw;
+  @include border-radius(8px);
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0, 0.35), 0 4vmin 10vmin 0 rgba(0,0,0, 0.5), 0 10vmin 26vmin 0 rgba(0,0,0, 1);
+}
+
+#blow {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./images/background2.jpg');
+  background-size: 81.5vw 100%;
+  background-repeat: no-repeat; 
+  width: 81.5vw;
+  min-height: 80vh;
+  @include border-radius(0 8px 8px 0);
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#footer {
+  height: 10vh;
+}
+
+section {
+  padding: 4.3vw;
+}
+
+#getInTouch {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  @include border-radius(8px 0 0 8px);
+  flex: 0 0 15px;
+  min-width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6vmin 26vmin 0 rgba(0,0,0,0.19);
+  div {
+    font-family: "montserrat-bold";
+    font-size: calc(5px + 1.125vh);
+    line-height: calc(10px + 2vh);
+    @include transform-rotate(-90deg);
+    white-space: nowrap;
+    margin-top: auto;
+    color: #000000;
+    @media screen and (max-height: 210px) {
+      font-size: 3.3vh;
+    }
+    span {
+      font-family: "montserrat";
+      color: #b3b3b3;
+    }
+  }
+  img {
+    margin-top: auto;
+    margin-bottom: 3vh;
+    height: calc(10px + 1.4vmin);
+    width: calc(10px + 1.8vmin);
+  }
+}
+
+nav {
+  padding: 8vh 0 0 4.3vw;
+  display: flex;
+  justify-content: space-around;
+  div:nth-child(1) {
+    margin: -3px auto 0 0;
+    a {
+      font-family: "montserrat-black";
+      font-size: calc(5px + 2.8vmin);
+      line-height: calc(10px + 2vmin);
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+  div:nth-child(2) {
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0, 0.35), 0 50px 60px 0 rgba(0,0,0, 0.6);
+    cursor: pointer;
+    font-family: "montserrat";
+    font-size: calc(5px + 1.08vmin);
+    background-color: #000000;
+    color: #ffffff;
+    @include border-radius(17px);
+    margin-right: 1.3vw;
+    text-align: center;
+    height: calc(10px + 2vmin);
+    width: calc(10px + 7vmin);
+    line-height: calc(10px + 2vmin);
+  }
+  div:nth-child(3) {
+    cursor: pointer;
+    font-family: "montserrat";
+    color: #442e1a;
+    font-size: calc(5px + 1.08vmin);
+    @include border-radius(17px);
+    margin-right: 0.8vw;
+    text-align: center;
+    height: calc(10px + 2vmin);
+    width: calc(10px + 8vmin);
+    line-height: calc(10px + 2vmin);
+  }
+  div:nth-child(4) {
+    cursor: pointer;
+    font-family: "montserrat";
+    color: #442e1a;
+    font-size: calc(5px + 1.08vmin);
+    @include border-radius(17px);
+    margin-right: 1.1vw;
+    text-align: center;
+    height: calc(10px + 2vmin);
+    width: calc(10px + 8vmin);
+    line-height: calc(10px + 2vmin);
+  }
+  div:nth-child(5) {
+    cursor: pointer;
+    font-family: "montserrat";
+    color: #442e1a;
+    font-size: calc(5px + 1.08vmin);
+    @include border-radius(17px);
+    margin-right: 3.2vw;
+    text-align: center;
+    height: calc(10px + 2vmin);
+    width: calc(15px + 8vmin);
+    line-height: calc(10px + 2vmin);
+  }
+}
+
+#work {
+  display: none;
+  font-family: "montserrat";
+  font-size: calc(5px + 1.08vmin);
+  line-height: calc(10px + 2vmin);
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 1);
+  height: 100%;
+}
+
