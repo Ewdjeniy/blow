@@ -33,7 +33,7 @@ const htmlPlugins = pages.map(fileName => new HtmlWebpackPlugin({
 
 module.exports = {
     entry: {
-        slider: './src/entry.js'
+        blow: './src/entry.js'
     },
     output: {
         filename: '[name].bundle.js',
